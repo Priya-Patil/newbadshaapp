@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_back"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible"
+                    android:background="@drawable/ic_arrow_back"
+                    />
+
+
+                <TextView
+                    android:layout_toRightOf="@id/img_back"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="120dp"
+                    android:text="Subscription"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/parentlayout"
+        android:visibility="gone"
+        >
+<RelativeLayout
+    android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background2"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:text="Diamond\n Pack"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_1"
+                android:text="\u2022 Race Card\n\u2022 Track work\n\u2022Scale Rating\n\u2022Speed Rating\n\u2022Bend Position Rating\n\u2022Media Choices"
+                          android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_below="@+id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_111"
+                android:text="\u2022Day Best Horse\n\u2022Eating Bets\n\u2022BADSHA\n HANDICAPPER\n CHOICES"
+                          android:textColor="@color/red"
+                android:textSize="12dp"
+                android:layout_below="@+id/txt_1"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_11"
+                android:text="1 Day At Just 50 Rs\n Plan Expires On"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_below="@+id/txt_111"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscribe"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/button_background2"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:visibility="visible"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/ic_pointing_right"
+                />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:id="@+id/web"
+                android:visibility="gone"               />
+
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/card_view2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background2"
+    android:layout_toRightOf="@+id/card_view"
+    android:layout_alignParentRight="true"
+    android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title2"
+                android:text="Diamond\n Pack"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_2"
+                android:text="\u2022 Race Card\n\u2022 Track work\n\u2022Scale Rating\n\u2022Speed Rating\n\u2022Bend Position Rating\n\u2022Media Choices"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_below="@+id/tv_title2"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_222"
+                android:text="\u2022Day Best Horse\n\u2022Eating Bets\n\u2022BADSHA\n HANDICAPPER\n CHOICES"
+                android:textColor="@color/red"
+                android:textSize="12dp"
+                android:layout_below="@+id/txt_2"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_22"
+                android:text="29 Days At Just 390 Rs Plan Expires On"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_below="@+id/txt_222"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <Button
+                android:id="@+id/btn_sub2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscribe"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/button_background2"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/ic_pointing_right"/>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+</layout>

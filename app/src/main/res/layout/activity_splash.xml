@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="match_parent"
+    >
+
+    <!--<TextView
+        android:id="@+id/tv_teacherName"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/gradient_green"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="&#45;&#45; AQUA &#45;&#45;"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat" />
+-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        >
+
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:background="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img"
+            android:scaleType="centerInside"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:text="@string/name"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/title1"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:text="Loading..."
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="6dp"
+            android:visibility="visible"
+            />
+
+
+ </RelativeLayout>
+
+
+</RelativeLayout>

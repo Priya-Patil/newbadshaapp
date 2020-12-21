@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.m90.badshahandicappertips">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--<uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+-->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".payment.FinalPaymentActivity">
+
+
+        </activity>
+        <activity android:name="com.m90.Main2Activity" />
+        <activity android:name=".general.NewSubsribeActivity" />
+        <activity android:name=".general.SubScriptionActivity" />
+        <activity android:name=".general.AboutActivity"></activity>
+        <activity android:name=".general.GeneralWebviewActivity" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".general.RatingActivity" />
+        <activity android:name=".general.ResultActivity" />
+        <activity android:name=".general.AchivesActivity" >
+
+        </activity>
+        <activity android:name=".otp.OTPActivity" />
+        <activity android:name=".general.ArchiveWebviewActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".payment.WebviewActivity" />
+        <activity android:name=".general.RaceCardActivity" />
+        <activity android:name=".general.TrackworkActivity" />
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".general.PrivacyActivity"></activity>
+    </application>
+
+</manifest>

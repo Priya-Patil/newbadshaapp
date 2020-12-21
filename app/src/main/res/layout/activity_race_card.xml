@@ -1,0 +1,261 @@
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.HomeActivity"
+        android:background="@color/bgcolor" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_back"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/ic_arrow_back"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible"/>
+
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/logo"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_title"
+                    android:layout_toRightOf="@+id/img_back"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rl_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@+id/toolbar"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_race_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text=""
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/rl_round"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/padding_20"
+            android:visibility="visible"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_race_no"
+            android:id="@+id/layout111"
+            android:background="@color/lightGrey"
+            android:layout_margin="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout1"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="18dp"
+                    android:id="@+id/txt_title1"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:id="@+id/txt_title2"
+                    android:layout_below="@+id/txt_title1"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout2"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/layout1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_number1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_number2"
+                    android:layout_below="@+id/txt_number1"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout3"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layout1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_time"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_distance"
+                    android:layout_below="@+id/txt_time"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rl_achives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@+id/layout111"
+            android:layout_margin="@dimen/padding_10"
+            android:layout_above="@+id/rl_toolbar2"
+            android:visibility="gone"
+            />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@+id/layout111"
+            android:layout_margin="4dp"
+            android:layout_above="@+id/rl_toolbar2"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true">
+
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Terms and conditions | "
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:id="@+id/txt1"
+                    />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" About us"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/txt1"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</layout>

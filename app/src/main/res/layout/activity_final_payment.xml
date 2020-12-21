@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment.FinalPaymentActivity"
+    android:background="@color/colorPrimary" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPLETE TRANSACTION"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:id="@+id/txttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txttitle"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="PAYMENT MODE"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/txt_title8"
+            android:background="@drawable/simpleshape1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+                       />
+
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/txt_title8"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/lightgrey2"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29 DAYS AT\nJUST 390/-"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/txt_title2"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_below="@+id/card_view1"
+            android:layout_marginTop="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="ACCOUNT NAME: BADSHA HANDICAPPER"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/txt_title3"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="viewStart"
+                android:paddingLeft="@dimen/padding_10"
+                android:backgroundTint="@color/lightgrey2"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="ACCOUNT NO.: 1605120020000103"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/txt_title4"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_below="@+id/txt_title3"
+                android:textAlignment="viewStart"
+                android:backgroundTint="@color/lightgrey2"
+                android:paddingLeft="@dimen/padding_10"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="IFSC CODE: UJVN0001605"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/txt_title5"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_below="@+id/txt_title4"
+                android:textAlignment="viewStart"
+             android:paddingLeft="@dimen/padding_10"
+             android:backgroundTint="@color/lightgrey2"
+             android:textStyle="bold"
+
+             />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="BRANCH NAME: VAIKOM"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/txt_title6"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_below="@+id/txt_title5"
+                android:textAlignment="viewStart"
+                android:backgroundTint="@color/lightgrey2"
+                android:paddingLeft="@dimen/padding_10"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="CURRENT ACCOUNT"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/txt_title7"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_below="@+id/txt_title6"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/lightgrey2"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="GOOGLE PAY: 9745331023"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:id="@+id/txt_title9"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/simpleshape1"
+            android:gravity="center"
+            android:layout_below="@+id/card_view3"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="PHONE PAY: 9745331023"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:id="@+id/txt_title10"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/simpleshape1"
+            android:gravity="center"
+            android:layout_below="@+id/txt_title9"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="PAYTM: 9745331023"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:id="@+id/txt_title1111"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/simpleshape1"
+            android:gravity="center"
+            android:layout_below="@+id/txt_title10"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:visibility="gone"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="QR CODE:"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:id="@+id/txt_titlescan1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/simpleshape1"
+            android:gravity="center"
+            android:layout_below="@+id/txt_title1111"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_titlescan2"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/imp"
+            android:gravity="center"
+            android:layout_below="@+id/txt_title11"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/txt_titlescan1"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/txt_titlescan1"
+            android:id="@+id/layout1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=  9745331023"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp"
+                android:id="@+id/txt_title111111"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="viewStart"
+                android:paddingLeft="@dimen/padding_10"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/gpay"
+                android:drawablePadding="38dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=  9745331023"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp"
+                android:id="@+id/txt_title22"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="viewStart"
+                android:paddingLeft="@dimen/padding_10"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ppay"
+                android:drawablePadding="5dp"
+                android:layout_below="@+id/txt_title111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="=  9745331023"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp"
+                android:id="@+id/txt_title33"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/simpleshape1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="viewStart"
+                android:paddingLeft="@dimen/padding_10"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/paytm"
+                android:drawablePadding="5dp"
+                android:layout_below="@+id/txt_title22" />
+
+        </RelativeLayout>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AFTER PAYMENT\nSEND SCREENSHOT ON BELOW WHATSAPP NUMBER \nTHEN I WILL ACTIVATE YOU"
+            android:textColor="@color/red"
+            android:textSize="10dp"
+            android:id="@+id/txt_title12"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/simpleshape1"
+            android:gravity="center"
+            android:layout_below="@+id/layout1"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/layout1111"
+            android:layout_below="@+id/txt_title12"
+            android:background="@drawable/simpleshape1"
+            android:backgroundTint="@color/lightgrey2"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_title14"
+            android:drawableLeft="@drawable/ic_pointing_rightpurple"
+            android:backgroundTint="@color/purple_700"
+            android:layout_centerVertical="true"
+            />
+              <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9745331023"
+            android:textColor="@color/purple_700"
+            android:textSize="20dp"
+            android:id="@+id/txt_title13"
+            android:textStyle="bold"
+                  android:layout_toRightOf="@+id/txt_title14"
+                  android:layout_centerVertical="true"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/padding_10"
+
+            />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+</layout>

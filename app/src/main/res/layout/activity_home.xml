@@ -1,0 +1,185 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+ <androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drl_Opener"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity"
+    android:background="@drawable/bg2" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorPrimary">
+
+
+               <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_openDrawer"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="10dp"
+                                    android:visibility="gone"
+                                    android:background="@drawable/ic_menu_black_24dp"
+                                    android:backgroundTint="@color/white" />
+
+
+                                <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/back_about"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/logo"
+                                    android:layout_alignParentRight="true"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Centers"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:layout_centerHorizontal="true"/>
+
+
+                        </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="View Archives"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"/>
+
+        <TextView
+            android:id = "@+id/txt_expirydate"
+            android:textSize = "15dp"
+            android:textAlignment = "center"
+            android:layout_width = "wrap_content"
+            android:ellipsize = "marquee"
+            android:fadingEdge = "horizontal"
+            android:marqueeRepeatLimit = "marquee_forever"
+            android:scrollHorizontally = "true"
+            android:textColor = "@color/red"
+            android:layout_below="@+id/txt_marquee"
+            android:layout_height = "wrap_content"
+            android:singleLine = "true"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            />
+
+    <TextView
+            android:id = "@+id/txt_marquee"
+            android:textSize = "22dp"
+            android:textAlignment = "center"
+            android:layout_width = "wrap_content"
+            android:ellipsize = "marquee"
+            android:fadingEdge = "horizontal"
+            android:marqueeRepeatLimit = "marquee_forever"
+            android:scrollHorizontally = "true"
+            android:textColor = "@color/white"
+            android:layout_below="@+id/submit1"
+            android:layout_height = "wrap_content"
+            android:singleLine = "true"
+            android:text=""
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@+id/txt_marquee"
+            android:layout_above="@+id/rl_toolbar2"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+
+
+            />
+
+                <RelativeLayout
+                    android:id="@+id/rl_toolbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true">
+
+
+                         <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Terms and conditions | "
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:id="@+id/txt1"
+                                    />
+
+                                 <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" About us"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                     android:id="@+id/txt2"
+                                    android:layout_toRightOf="@+id/txt1"/>
+
+                    </RelativeLayout>
+               </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+<!--
+        <include layout="@layout/drawer_layout" />
+-->
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>
